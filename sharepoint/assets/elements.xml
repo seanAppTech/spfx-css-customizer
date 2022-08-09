@@ -4,6 +4,6 @@
         Title="CssExtension"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="bed6f550-0a8c-4b9e-bb35-bbc00751e18e"
-        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        ClientSideComponentProperties="{&quot;cssurl&quot;:&quot;/StyleLibrary/global.css&quot;}">
     </CustomAction>
 </Elements>

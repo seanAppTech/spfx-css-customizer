@@ -4,23 +4,23 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://apptechpaymentscorp.sharepoint.com",
       "customActions": {
         "bed6f550-0a8c-4b9e-bb35-bbc00751e18e": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "testMessage": "Test message"
+            "cssurl": "/StyleLibrary/global.css"
           }
         }
       }
     },
     "cssExtension": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://apptechpaymentscorp.sharepoint.com",
       "customActions": {
         "bed6f550-0a8c-4b9e-bb35-bbc00751e18e": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "testMessage": "Test message"
+            "cssurl": "/StyleLibrary/global.css"
           }
         }
       }
