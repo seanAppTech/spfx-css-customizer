@@ -5,6 +5,7 @@ import {
 import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'CssExtensionApplicationCustomizerStrings';
+import { override } from '@microsoft/decorators';
 
 const LOG_SOURCE: string = 'CssExtensionApplicationCustomizer';
 
@@ -15,7 +16,6 @@ const LOG_SOURCE: string = 'CssExtensionApplicationCustomizer';
  */
 export interface ICssExtensionApplicationCustomizerProperties {
   // This is an example; replace with your own property
-  testMessage: string;
   cssurl: string;
 }
 
@@ -23,17 +23,22 @@ export interface ICssExtensionApplicationCustomizerProperties {
 export default class CssExtensionApplicationCustomizer
   extends BaseApplicationCustomizer<ICssExtensionApplicationCustomizerProperties> {
 
+  @override
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
 
+    const baseUrl: string = 'https://apptechpaymentscorp.sharepoint.com/sites/Employee-Portal';
     const cssUrl: string = this.properties.cssurl;
+
     if (cssUrl) {
       const head: any = document.getElementsByTagName("head")[0] || document.documentElement;
       let customStyle: HTMLLinkElement = document.createElement("link");
-      customStyle.href = cssUrl;
+      customStyle.href = baseUrl + cssUrl;
       customStyle.rel = "stylesheet";
       customStyle.type = "text/css";
       head.insertAdjacentElement("beforeEnd", customStyle);
+    } else {
+      console.log("cssUrl is null.")
     }
 
     return Promise.resolve();
