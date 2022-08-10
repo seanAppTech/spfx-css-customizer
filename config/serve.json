@@ -4,23 +4,23 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://apptechpaymentscorp.sharepoint.com",
+      "pageUrl": "https://apptechpaymentscorp.sharepoint.com/sites/Employee-Portal",
       "customActions": {
         "bed6f550-0a8c-4b9e-bb35-bbc00751e18e": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "cssurl": "/StyleLibrary/global.css"
+            "cssurl": "/Style%20Library/global.css"
           }
         }
       }
     },
     "cssExtension": {
-      "pageUrl": "https://apptechpaymentscorp.sharepoint.com",
+      "pageUrl": "https://apptechpaymentscorp.sharepoint.com/sites/Employee-Portal",
       "customActions": {
         "bed6f550-0a8c-4b9e-bb35-bbc00751e18e": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "cssurl": "/StyleLibrary/global.css"
+            "cssurl": "/Style%20Library/global.css"
           }
         }
       }
