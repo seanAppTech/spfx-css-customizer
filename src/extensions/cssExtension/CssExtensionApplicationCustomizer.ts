@@ -38,7 +38,7 @@ export default class CssExtensionApplicationCustomizer
       customStyle.type = "text/css";
       head.insertAdjacentElement("beforeEnd", customStyle);
     } else {
-      console.log("cssUrl is null.")
+      console.log("cssUrl is null.");
     }
 
     return Promise.resolve();
