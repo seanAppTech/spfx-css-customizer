@@ -9,15 +9,15 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "@microsoft/sp-core-library": "1.14.0",
-    "@microsoft/decorators": "1.14.0",
-    "@microsoft/sp-dialog": "1.14.0",
-    "@microsoft/sp-application-base": "1.14.0"
+    "@microsoft/sp-core-library": "1.15",
+    "@microsoft/decorators": "1.15",
+    "@microsoft/sp-dialog": "1.15",
+    "@microsoft/sp-application-base": "1.15"
   },
   "devDependencies": {
-    "@microsoft/sp-build-web": "1.14.0",
-    "@microsoft/sp-tslint-rules": "1.14.0",
-    "@microsoft/sp-module-interfaces": "1.14.0",
+    "@microsoft/sp-build-web": "1.15",
+    "@microsoft/sp-tslint-rules": "1.15",
+    "@microsoft/sp-module-interfaces": "1.15",
     "@microsoft/rush-stack-compiler-3.9": "0.4.47",
     "gulp": "~4.0.2",
     "ajv": "~5.2.2",
